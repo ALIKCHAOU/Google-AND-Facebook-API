@@ -5,10 +5,13 @@ code clien RiiRUMfDuSApkuWRVJry9f5c-->
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <a href="#" onclick="signOut();">Sign out</a>
 <a href="#" onclick="onSignIn(googleUser);">get information</a>
-<input type=text id="ID"  >
-<input type=text id="Name"  >
-<input type=text id='Email'  >
-<img   width="50" height="50">
+<input type="text"  id='h1'  />
+<input type="text" id="Name"  />
+<input type="text" id='Email'  />
+<img   width="50" height="50" alt='' />
+<button onclick=afficher()>onclick </button>
+<h1 id="myHeader">Hello World!</h1>
+
 
 
 
@@ -28,5 +31,13 @@ function onSignIn(googleUser) {
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
+     function afficher()
+{ alert("hey")
+document.getElementById('h1').value=profile.getName();
+document.getElementById("Name").value="***";
+document.getElementById("Email").value=profile.getEmail();
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
   }
+ 
 </script>

@@ -33,7 +33,7 @@ function onSignIn(googleUser) {
     });
 
   }
-       function afficher()
+       function afficher(googleUser) 
 { alert("hey")
   var profile = googleUser.getBasicProfile();
 document.getElementById('h1').value=profile.getName();

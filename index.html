@@ -5,6 +5,11 @@ code clien RiiRUMfDuSApkuWRVJry9f5c-->
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <a href="#" onclick="signOut();">Sign out</a>
 <a href="#" onclick="onSignIn(googleUser);">get information</a>
+<input type=text id="ID" value=profile.getId() >
+<input type=text id="Name" value=profile.getName() >
+<input type=text id='Email' value=profile.getEmail() >
+<img src=profile.getImageUrl()  width="50" height="50">
+<
 <script>
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();

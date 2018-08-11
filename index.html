@@ -35,10 +35,12 @@ function onSignIn(googleUser) {
   }
        function afficher()
 { alert("hey")
+  var profile = googleUser.getBasicProfile();
 document.getElementById('h1').value=profile.getName();
 document.getElementById("Name").value="***";
 document.getElementById("Email").value=profile.getEmail();
   document.getElementById("myHeader").innerHTML = "Have a nice day!";
+ console.log(profile);
 }
  
 </script>
